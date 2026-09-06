@@ -157,4 +157,4 @@ python bank.py
 
 **Aysel Hasanova**
 
-Aspiring Data Analyst interested in **SQL, Python, Excel, Power BI, and Business Analytics**.
+Data Analyst interested in **SQL, Python, Excel, Power BI, and Business Analytics**.
