@@ -1,37 +1,25 @@
 # 🏦 Banking Customer, Transaction & Risk Analytics
 
-An end-to-end banking analytics project focused on analyzing customers, accounts, transactions, loans, cards, complaints, branches, and campaigns using **MySQL, Python, Pandas, and Excel**.
+An end-to-end banking analytics project using **MySQL, Python, Pandas, and Excel** to analyze customers, accounts, transactions, loans, cards, complaints, branches, and campaigns.
 
 ## 📌 Project Overview
-
-This project analyzes banking data to identify customer behavior, transaction patterns, branch performance, loan trends, and potential risk indicators.
 
 The project follows an end-to-end data analytics workflow:
 
 **MySQL → Python & Pandas → Excel Dashboard → Business Insights**
 
-## 🎯 Business Objectives
-
-* Analyze customer and account activity
-* Understand transaction behavior and transaction status
-* Evaluate branch performance
-* Analyze loan distribution and loan status
-* Examine loan payment patterns
-* Analyze card usage
-* Explore customer complaints
-* Evaluate campaign performance
-* Identify useful business and risk-related insights
+The analysis focuses on customer activity, transaction behavior, branch performance, loan trends, and banking risk indicators.
 
 ## 🛠️ Technologies
 
-* **MySQL** — Database creation, data storage, relationships, and SQL analysis
+* **MySQL** — Database design, data storage, relationships, and SQL
 * **Python** — Data generation and analysis
-* **Pandas** — Data manipulation and exploratory analysis
-* **Excel** — Dashboard development and data visualization
+* **Pandas** — Data manipulation and analysis
+* **Excel** — Dashboard development and visualization
 
 ## 🗄️ Database Structure
 
-The project contains 10 main tables:
+The database contains 10 main tables:
 
 * Customers
 * Branches
@@ -44,16 +32,15 @@ The project contains 10 main tables:
 * Complaints
 * Campaigns
 
-These tables are connected through relational keys to represent a realistic banking data environment.
+The tables are connected through relational keys to represent a realistic banking environment.
 
 ## 🐍 Python & Pandas Analysis
 
-Python was used to generate and work with the banking dataset.
+Python was used to generate and insert the banking dataset into MySQL.
 
 Pandas was used for:
 
-* Data loading
-* Data exploration
+* Data loading and exploration
 * Grouping and aggregation
 * Transaction status analysis
 * Branch performance analysis
@@ -62,9 +49,7 @@ Pandas was used for:
 
 ## 📊 Excel Dashboard
 
-The final analysis was visualized in an interactive Excel dashboard.
-
-The dashboard includes KPI cards, charts, and filters for exploring important banking metrics.
+The final analysis was visualized through an interactive Excel dashboard containing KPIs, charts, PivotTables, and filters.
 
 ### Key KPIs
 
@@ -74,26 +59,53 @@ The dashboard includes KPI cards, charts, and filters for exploring important ba
 * Transaction Value
 * Average Transaction
 
-### Dashboard Analysis
+### Dashboard Areas
 
-The dashboard focuses on:
+* Customer Analysis
+* Transaction Analysis
+* Loan Analysis
+* Branch Analysis
+* Overall Banking Performance
 
-* Transaction performance
-* Transaction status
-* Transaction types
-* Branch performance
-* Customer activity
-* Loan performance
-* Banking trends
+## 🖼️ Dashboard Preview
+
+### Overview
+
+![Overview Dashboard](images/overview.png)
+
+### Customer
+
+![Customer Dashboard](images/customer.png)
+
+### Transaction
+
+![Transaction Dashboard](images/transaction.png)
+
+### Loan
+
+![Loan Dashboard](images/loan.png)
+
+### Branch
+
+![Branch Dashboard](images/branch.png)
 
 ## 📁 Project Structure
 
 ```text
 Banking-Customer-Transaction-Risk-Analytics/
 │
+├── images/
+│   ├── overview.png
+│   ├── customer.png
+│   ├── transaction.png
+│   ├── loan.png
+│   └── branch.png
+│
 ├── bank.py
 ├── bank.sql
 ├── banking_analyticss.xlsx
+├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
@@ -105,7 +117,7 @@ Run `bank.sql` in MySQL to create the database, tables, and relationships.
 
 ### 2. Configure MySQL
 
-Open `bank.py` and enter your own MySQL credentials:
+Update your MySQL credentials in `bank.py`:
 
 ```python
 connection = mysql.connector.connect(
@@ -116,46 +128,30 @@ connection = mysql.connector.connect(
 )
 ```
 
-### 3. Install required libraries
+### 3. Install dependencies
 
 ```bash
-pip install pandas mysql-connector-python
+pip install -r requirements.txt
 ```
 
-### 4. Run the Python script
+### 4. Run the project
 
 ```bash
 python bank.py
 ```
 
-The script generates and inserts the banking data into MySQL and performs the required Pandas analysis.
+## 📈 Key Skills
 
-## 📈 Key Skills Demonstrated
-
-* Relational Database Design
-* SQL
 * MySQL
+* SQL
 * Python
 * Pandas
 * Data Analysis
-* Data Cleaning
-* Exploratory Data Analysis
 * Excel
-* Pivot Tables
-* Interactive Dashboards
+* PivotTables
+* Dashboard Development
 * Business Analytics
-* Banking & Risk Analytics
-
-## 🚀 Future Improvements
-
-Possible future extensions include:
-
-* Power BI dashboard
-* Advanced customer segmentation
-* More detailed risk scoring
-* Predictive analytics
-* Automated reporting
-* Advanced SQL analysis
+* Banking Analytics
 
 ## 👩‍💻 Author
 
