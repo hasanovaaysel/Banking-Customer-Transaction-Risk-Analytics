@@ -47,7 +47,7 @@ Pandas was used for:
 * Monthly transaction type analysis
 * Loan status analysis
 
-## 📊 Excel Dashboard
+## 📊Excel Dashboard
 
 The final analysis was visualized through an interactive Excel dashboard containing KPIs, charts, PivotTables, and filters.
 
